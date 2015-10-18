@@ -1,0 +1,13 @@
+﻿page {
+	background-color: white;
+}
+
+.reddit-item {
+	height: 100;
+	margin-left: 10;
+}
+
+image {
+	margin: 0 10 10 10;
+	height: 300;
+}

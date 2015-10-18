@@ -1,0 +1,28 @@
+<Page loaded="loaded" navigatedTo="navigatedTo" unloaded="unloaded">
+	<Image src="{{ url }}" />
+
+	<ScrollView>
+		<StackLayout>
+			<Image imageSource="{{ image }} " />
+
+			<TextField hint="Top text" text="{{ topText }}" />
+
+			<TextField hint="Bottom text" text="{{ bottomText }}" />
+
+			<GridLayout rows="auto, auto" columns="auto, *">
+				<Label row="0" col="0" cssClass="settingsLeft" text="Text Size"/>
+
+				<Slider row="0" col="1" 
+					cssClass="settingsRight" 
+					value="{{ fontSize }}"
+					minValue="10"
+					maxValue="100" />
+
+				<Label row="1" col="0" cssClass="settingsLeft" text="Black Text" />
+				<Switch row="1" col="1" cssClass="settingsRight" checked="{{ isBlackText }}" />
+			</GridLayout>
+
+			<Button text="Apply" tap="apply" />
+		</StackLayout>
+	</ScrollView>
+</Page>

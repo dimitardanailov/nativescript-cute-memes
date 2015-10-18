@@ -1,0 +1,14 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="loaded">
+  <ListView items="{{ reddit }}" loadMoreItems="loadMoreItems" itemTap="itemTap">
+		<ListView.itemTemplate>
+			
+			<StackLayout>
+				<Label text="{{ title }}" 
+					textWrap="true" cssClass="reddit-item" />
+				<Image src="{{ url }}" />
+			</StackLayout>
+			
+
+		</ListView.itemTemplate>
+	</ListView>
+</Page>
